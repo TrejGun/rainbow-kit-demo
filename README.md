@@ -1,4 +1,4 @@
-# Wagmi lesson
+# RainbowKit demo
 
 ```bash
 docker compose up -d 
