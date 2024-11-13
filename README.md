@@ -1,1 +1,8 @@
-# rainbow-kit-demo
+# Wagmi lesson
+
+```bash
+docker compose up -d 
+
+npm i
+npm start
+```
