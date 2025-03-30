@@ -1,6 +1,6 @@
 import { defineChain } from "viem";
 import { http } from "wagmi";
-import { mainnet } from "wagmi/chains";
+import { mainnet, polygon } from "wagmi/chains";
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
 
 export const ethberry = defineChain({
@@ -27,9 +27,10 @@ export const ethberry = defineChain({
 export const config = getDefaultConfig({
   appName: "RainbowKit Demo",
   projectId: "1a771229734ecc7f9a9561262fe88f4a",
-  chains: [mainnet, ethberry],
+  chains: [mainnet, polygon, ethberry],
   transports: {
     [mainnet.id]: http(),
+    [polygon.id]: http(),
     [ethberry.id]: http(),
   },
 });
